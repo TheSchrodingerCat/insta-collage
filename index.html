@@ -2,12 +2,96 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Insta Collage</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/common.css">
   	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+	<!-- navbar que contiene boton de idiomas-->
+	<section class="nav-bar" id="navbar">
+		<div class="container-fluid">
+			<div class="col-xs-offset-4 col-xs-3">
+				<div class="nav navbar-nav">
+					<div class="dropdown">
+						<button class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Idioma <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#">idioma1</a></li>
+							<li><a href="#">idioma2</a></li>
+							<li><a href="#">idioma3</a></li>
+							<li><a href="#">idioma4</a></li>
+						</ul>						
+					</div>				
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- logo instagram -->
+	<section class="header" id="header">
+		<div class="container">
+			<div class="insta" id="insta">
+				<img src="assets/img/inta-letra.png" alt="..." class="photo-insta img-responsive">
+			</div>
+		</div>
+	</section>
+
+	<!-- formulario -->
+	<section class="formulario" id="formulario">
+		<div class="container">
+			<div class="col-xs-12">
+				<form>
+  					<div class="form-group">
+  						<input type="name" class="form-control" id="input-name" placeholder="Name">
+  					</div>
+  					<div class="form-group">
+  					  	<input type="password" class="form-control" id="input-password" placeholder="Password">
+  					</div>
+  					<div class="form-group">
+		  				<button href="#index2.html" class="btn btn-block text-center">Iniciar Sesión</button>
+  					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- ayuda y facebook -->
+	<section class="others" id="others">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<p>¿Has olvidado tu información de inicio de sesión? <a href="#">Obten ayuda.</a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<div class="line"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<button class="btn btn-block text-center">
+						<i class="fa fa-facebook-official" aria-hidden="true"></i> <span>Iniciar sesión con Facebook</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<p>¿No tienes una cuenta? <a href="#">Regístrate</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<script src="assets/js/main.js"></script>
 </body>

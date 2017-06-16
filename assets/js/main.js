@@ -21,7 +21,10 @@ function validate(){
 		var idNombre = document.getElementById("input-name").value;
 		var idContrasena = document.getElementById("input-password").value;
 
-		if (!(/^[A-Z][a-z]{3,19}\s[A-Z][a-z]{3,19}$/).test(idNombre)){
+		if (!(/^[A-Z][a-z]{3,19}\s[A-Z][a-z]{3,19}$/).test(idNombre) && (idContrasena=="123456" || idContrasena.length<6)){
+			formularioDom("nombre",0);
+			formularioDom("contraseña",1);
+		} else if (!(/^[A-Z][a-z]{3,19}\s[A-Z][a-z]{3,19}$/).test(idNombre)){
 			formularioDom("nombre",0);
 		} else if (idContrasena=="123456" || idContrasena.length<6){
 			formularioDom("contraseña",1);

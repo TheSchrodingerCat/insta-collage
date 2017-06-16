@@ -16,3 +16,13 @@
 	font-size: 120%;
 }
 
+/*------------------------------- FOOTER --------------------------------*/
+.foot{
+	background: transparent;
+	border: transparent;
+	color: white;
+}
+
+.foot.dropdown-toggle{
+	color: rgb(59, 89, 152)
+}

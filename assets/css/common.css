@@ -10,7 +10,10 @@ body{
 	background: linear-gradient(to bottom left, rgb(100, 192, 121), rgb(198, 125, 58)); 
 }
 
-footer{
-	position: fixed;
-	bottom: 0px;
+.blanco{
+	color: white;
+}
+
+.bold{
+	font-weight: bold;
 }

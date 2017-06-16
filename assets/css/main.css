@@ -1,7 +1,67 @@
 
+/*------------------------- BOTON -----------------------------*/
+.idiomas{
+	background: transparent;
+	border: none;
+}
+
+.idiomas:hover{
+	cursor: pointer;
+	background: transparent;
+}
+
+
+/*---------------------------- HEADER -------------------------*/
+.header{
+	margin: 10% auto;
+	padding: 0 20%;
+}
+
+
 /*------------------------ FORMULARIO ------------------------------*/
+.cont-dato{
+	padding: 6% 4%;
+	opacity: 0.3;
+}
+
 .contenedor-collapse{
 	color: white;
 	font-weight: bold;
 	padding: 2%;
+}
+
+.borde-enlace{
+	border: 1px solid whitesmoke;
+	padding: 2%
+}
+
+.row.line{
+	margin: 0 10%;
+}
+
+.linea{
+	width: 40%;
+	margin: 4% 0 6% 0;
+	border: 1px solid white;
+	opacity: 0.5;
+}
+
+.fa-circle-o{
+	font-size: 120%;
+}
+
+.fb{
+	padding: 2%;
+	background: transparent;
+}
+
+.row.fb{
+	margin-bottom: 8%;
+}
+
+/*--------------------------------- FOOTER ----------------------------------*/
+.footer{
+	padding: 2%;
+	border: 1px solid whitesmoke;
+	opacity: 0.8;
 }

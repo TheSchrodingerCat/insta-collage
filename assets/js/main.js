@@ -4,27 +4,30 @@
 document.getElementById("send").addEventListener("click",validate);
 
 function validate(){
-	function formularioDom(dato,clase,n){
-		var spanElement = document.createElement("span");
-		var spanText = document.createTextNode("Campo inválido. Ingrese nuevamente su " + dato + ".");
-		var spanFather = document.getElementsByClassName(clase + " input-box")[n];
-		spanElement.appendChild(spanText);
-		spanFather.appendChild(spanElement);
+	function formularioDom(dato,n){
+		document.getElementById("send").setAttribute("data-toggle","collapse");
+		document.getElementById("send").setAttribute("data-target","#mycollapse");
+		document.getElementById("send").setAttribute("aria-expanded","true");
+		document.getElementById("send").setAttribute("aria-controls","mycollapse");
+
+		var divElement = document.createElement("div");
+		var divText = document.createTextNode("Campo inválido o vacío. Ingrese nuevamente su " + dato + ".");
+		var divFather = document.getElementsByClassName("contenedor-collapse")[n];
+		divElement.appendChild(divText);
+		divFather.appendChild(divElement);	
 	}
 
-	function name(){
+	function data(){
 		var idNombre = document.getElementById("input-name").value;
-		if (!(/^[A-Z][a-z]{3,19}\s[A-Z][a-z]{3,19}$/).test(idNombre)){
-			formularioDom("nombre","name-container",0);
-		}
-	}
-	name();
-
-	function contrasena(){
 		var idContrasena = document.getElementById("input-password").value;
-		if (idContrasena=="123456" || idContrasena.length<6){
-			formularioDom("contraseña","form-group",0);
+
+		if (!(/^[A-Z][a-z]{3,19}\s[A-Z][a-z]{3,19}$/).test(idNombre)){
+			formularioDom("nombre",0);
+		} else if (idContrasena=="123456" || idContrasena.length<6){
+			formularioDom("contraseña",1);
+		} else {
+			document.getElementById("send").setAttribute("href","index2.html");
 		}
 	}
-	contrasena();
+	data();
 }
